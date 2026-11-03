@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Registration</title>
+</head>
+<body>
+
+<h2>University Registration</h2>
+
+<form id="regForm" novalidate>
+    <div class="form-group">
+        <label>Name:</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <br>
+
+    <div class="form-group">
+        <label>Email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+    <br>
+
+    <div class="form-group">
+        <label>Age:</label>
+        <input type="number" id="age" name="age">
+    </div>
+    <br>
+
+    <div class="form-group">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+    </div>
+    <br>
+
+    <div class="form-group">
+        <label>Course:</label>
+        <select id="course" name="course">
+            <option value="">Select Course</option>
+            <option value="btech">B.Tech</option>
+            <option value="bca">BCA</option>
+            <option value="mca">MCA</option>
+            <option value="mba">MBA</option>
+        </select>
+    </div>
+    <br>
+    
+    <div class="form-group">
+        <label>Study Mode:</label>
+        <input type="radio" name="mode" value="Regular"> Regular
+        <input type="radio" name="mode" value="Distance"> Distance
+    </div>
+    <br>
+
+    <div class="form-group">
+        <label>Password:</label>
+        <input type="password" id="password" name="password">
+    </div>
+    <br>
+
+    <div class="form-group">
+        <label>Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirm_password">
+    </div>
+    <br>
+
+    <div class="form-group">
+        <input type="checkbox" id="terms" name="terms">
+        <label>I accept the Terms and Conditions.</label>
+    </div>
+
+    <button type="submit">Register</button>
+    <p id="error" aria-live="polite"></p>
+</form>
+
+<script src="unireg.js" defer></script>
+
+</body>
+</html>

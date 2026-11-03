@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="todolist.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>To-Do List</h1>
+
+        <form id="todo-form">
+            <label for="todo-input">Task:</label>
+            <br>
+            <input
+                id="todo-input"
+                name="task"
+                type="text"
+                maxlength="120"
+                autocomplete="off"
+                required
+            >
+            <br>
+            <button type="submit">Add</button>
+        </form>
+
+        <section aria-labelledby="tasks-heading">
+            <h2 id="tasks-heading">Tasks</h2>
+            <span id="task-count" aria-live="polite">0 tasks left</span>
+            <ul id="todo-list" aria-live="polite"></ul>
+            <p id="empty-message"></p>
+        </section>
+    </main>
+</body>
+</html>
